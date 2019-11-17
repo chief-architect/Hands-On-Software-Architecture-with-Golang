@@ -21,7 +21,7 @@ func (r HotelReservationImpl) GetReservationDate() string {
 	return r.reservationDate
 }
 
-func (r HotelReservationImpl) SetReservationDate(date string) {
+func (r *HotelReservationImpl) SetReservationDate(date string) {
 	r.reservationDate = date
 }
 
@@ -29,7 +29,7 @@ func (r FlightReservationImpl) GetReservationDate() string {
 	return r.reservationDate
 }
 
-func (r FlightReservationImpl) SetReservationDate(date string) {
+func (r *FlightReservationImpl) SetReservationDate(date string) {
 	r.reservationDate = date
 }
 
